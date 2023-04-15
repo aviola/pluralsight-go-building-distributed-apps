@@ -20,7 +20,7 @@ func startService(ctx context.Context, serviceName, host, port string) context.C
 	ctx, cancel := context.WithCancel(ctx)
 
 	var srv http.Server
-	srv.Addr = ":" + port
+	srv.Addr = host + ":" + port
 
 	// 1) goroutine to start the server
 	go func() {
