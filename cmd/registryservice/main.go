@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/aviola/pluralsight-go-building-distributed-apps/app/registry"
+	"github.com/aviola/pluralsight-go-building-distributed-apps/registry"
 )
 
 /*
@@ -35,7 +35,7 @@ func main() {
 
 	// 2) goroutine to give us a cancellation option
 	go func() {
-		fmt.Println("Log service started. Press any key to stop.")
+		fmt.Println("Registry service started. Press any key to stop.")
 		var s string
 		fmt.Scanln(&s)
 
